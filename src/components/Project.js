@@ -37,7 +37,7 @@ class Project extends React.Component{
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/Rowtram.jpg",
                 text: <div>
                         <h3>Rowtram Jobsite</h3>
-                        <p>Laravel framework, Materialize CSS,<br/> and Deployed in Heroku.</p>
+                        <p>Laravel framework, Materialize CSS, and Deployed in Heroku.</p>
                         <a target="_blank" href="http://rowtram-jobsite.herokuapp.com" id="launch" class="button">Launch Website</a>
                       </div>
                 }
