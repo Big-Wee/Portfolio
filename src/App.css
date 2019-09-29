@@ -295,8 +295,8 @@ background-color: #343a40;
     border-bottom: 0.3em solid #343a40;
     margin: 1em auto 4em auto;
 }
-.sticky {
-    position: fixed!important;
+.navbar.sticky {
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
