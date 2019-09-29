@@ -10,8 +10,9 @@ height: 10vh;
 .navbar-collapse {
     flex-grow: 0 !important;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link a{
     color: white!important;
+    text-decoration: none;
 }
 .particle {
 height: 90vh;
@@ -119,8 +120,7 @@ opacity: 0.25;
 }
 
 .footer a {
-    margin-top: 2.25em;
-    font-size: 1.5em;
+    margin-top: 4.25em;
 }
 
 .fa {
@@ -192,11 +192,13 @@ opacity: 0.25;
 
 .slide {
     display: inline-block;
+    position: relative;
     height: 100%;
     width: 100%;
 }
 .slidetext {
     display: inline-block;
+    position: absolute;
     height: 100%;
     width: 100%;
     margin-left: 2em;
@@ -239,7 +241,8 @@ opacity: 0.25;
     width: 40vw;
     color: black;
     right: 0;
-    top: 15em;
+    top: 20vh;
+    z-index: 200;
 }
 .landingPage-content h1 {
     color: black;
@@ -265,6 +268,9 @@ padding-right:0.5em;
     color: rgba(0, 0, 0, .5);
     font-size: 1.15em;
     text-transform: uppercase;
+}
+.navbar{
+background-color: #343a40;
 }
 #launch {
     background-color: #0f244d;
@@ -298,4 +304,81 @@ padding-right:0.5em;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+
+@media only screen and (max-width:1024px) {
+.landingPage-content {
+    position: absolute;
+    width: 50vw;
+    color: black;
+    left: 4em;
+    top: 60vh;
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+    width: 100%;
+    top: 0;
+}
+.cb-slideshow li span {
+    height: 80vh;
+}
+}
+@media only screen and (max-width:768px) {
+    .cb-slideshow {
+        display: none;
+    }
+.slidetext{
+position: relative;
+}
+    .landingPage-content {
+        position: absolute;
+        width: 80vw;
+        color: black;
+        right: 10vw;
+        top: 40vh;
+    }
+    .navbar {
+        position: absolute!important;
+        display: block !important;
+        top: 2em;
+        left: 2em;
+        padding: .5rem 1rem;
+    }
+    .navbar{
+    background-color: transparent!important;
+    }
+    .navbar-light .navbar-nav .nav-link a {
+        color: black !important;
+    }
+    .navbar-collapse {
+        margin-left: 4em;
+    }
+    .slideImage {
+        width: 80%;
+        margin-left: 10%;
+        height: 300px;
+        display: block;
+    }
+    .slidetext {
+        display: block;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width:420px) {
+    .slideImage {
+        width: 90%;
+        margin-left: 5%;
+        height: 200px;
+    }
+    .slidetext {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .backArrow, .nextArrow{
+        top: 1em;
+    }
 }

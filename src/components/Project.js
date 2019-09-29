@@ -13,7 +13,7 @@ class Project extends React.Component{
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/Hauora.jpg",
                 text: <div>
                         <h3>Hauora Yoga Conference</h3>
-                        <p>Custom plugin developement using PHP OOP(Wordpress),<br/>Website design, and Stripe Gateway.</p>
+                        <p>Custom plugin developement using PHP OOP(Wordpress), Website design,<br/> and Stripe Gateway.</p>
                         <a target="_blank" href="https://hauorayoga.org.nz" id="launch" class="button">Launch Website</a>
                       </div>
                 },
@@ -21,7 +21,7 @@ class Project extends React.Component{
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/YogaLunch.jpg",
                 text: <div>
                         <h3>The Yoga LunchBox</h3>
-                        <p>Mobile responsive, responsive imaging,<br/>and WordPress Customisation.</p>
+                        <p>Mobile responsive, responsive imaging, and WordPress Customisation.</p>
                         <a target="_blank" href="https://theyogalunchbox.co.nz" id="launch" class="button">Launch Website</a>
                       </div>
                 },
@@ -29,7 +29,7 @@ class Project extends React.Component{
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/Fitnz.jpg",
                 text: <div>
                         <h3>FitNz Jobsite</h3>
-                        <p>Custom MVC Laravel-like framework,<br/> Material design implementation, and Cron job notification.</p>
+                        <p>Custom MVC Laravel-like framework, Material design implementation, and Cron job notification.</p>
                         <a target="_blank" href="http://ufit.co.nz" id="launch" class="button">Launch Website</a>
                       </div>
                 },

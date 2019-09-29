@@ -3,9 +3,9 @@ import React from 'react';
 const Slide = ({ image }) => {
     const styles = {
         backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '50% 60%'
+        backgroundPosition: 'center'
     }
     return <div className='slideImage' style={styles}> </div>;
 }

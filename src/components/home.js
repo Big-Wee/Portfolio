@@ -12,13 +12,13 @@ class Home extends React.Component {
         };
     }
     componentDidMount = () => {
-        window.addEventListener('scroll', this.handleScroll);
-        var navbar = document.querySelector("#navbar");
-        this.sticky = navbar.offsetTop;
+        if(window.innerWidth > 1200) {
+            window.addEventListener('scroll', this.handleScroll);
+            var navbar = document.querySelector("#navbar");
+            this.sticky = navbar.offsetTop;
+        }
     }
     handleScroll = (event) => {
-        
-        
         if (window.pageYOffset >= this.sticky) {
             document.querySelector("#navbar").classList.add("sticky");
         } else {
@@ -116,7 +116,7 @@ class Home extends React.Component {
                   <Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={1000} href="view" className="button"><a >View My Projects</a></Link>
                   </p>
               </div>
-              <Navbar id='navbar' bg="dark" expand="lg"> 
+              <Navbar id='navbar' expand="lg"> 
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
