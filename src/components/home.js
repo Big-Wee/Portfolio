@@ -5,7 +5,26 @@ import Nav from 'react-bootstrap/Nav';
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 class Home extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            sticky : 0
+        };
+    }
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.handleScroll);
+        var navbar = document.querySelector("#navbar");
+        this.sticky = navbar.offsetTop;
+    }
+    handleScroll = (event) => {
+        
+        
+        if (window.pageYOffset >= this.sticky) {
+            document.querySelector("#navbar").classList.add("sticky");
+        } else {
+            document.querySelector("#navbar").classList.remove("sticky");
+        }
+    }
       render() {
           return ( 
           <div className='landing-page' id='home'>
@@ -97,11 +116,11 @@ class Home extends React.Component {
                   <Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={1000} href="view" className="button"><a >View My Projects</a></Link>
                   </p>
               </div>
-              <Navbar bg="dark" expand="lg"> 
+              <Navbar id='navbar' bg="dark" expand="lg"> 
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                      <Nav.Link><Link  activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={1000} href="#home">Home</Link></Nav.Link>
+                      <Nav.Link><Link  activeClass="active" to="home" spy={true} smooth={true}  duration={1000} href="#home">Home</Link></Nav.Link>
                       <Nav.Link><Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={1000} href="#project">Projects</Link></Nav.Link>
                       <Nav.Link><Link activeClass="active" to="footer" spy={true} smooth={true} offset={50} duration={1000} href="#contact">Contact</Link></Nav.Link>
                     </Nav>
