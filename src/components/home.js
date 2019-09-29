@@ -1,13 +1,16 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-
-
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 class Home extends React.Component {
 
       render() {
           return ( 
-          <div className='landing-page'>
-              < Particles params = {
+          <div className='landing-page' id='home'>
+            <div className='particle'>
+                < Particles params = {
                   {
                       "particles": {
                           "number": {
@@ -34,21 +37,16 @@ class Home extends React.Component {
                                       "width": 20
                                   },
                                   {
-                                      "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/mobile.png",
+                                      "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/laravel.png",
                                       "height": 20,
-                                      "width": 20
+                                      "width": 30
                                   },
                                   {
                                       "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/php.png",
-                                      "height": 35,
-                                      "width": 35
-                                  },
-                                  {
-                                      "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/custom-cms.png",
-                                      "height": 20,
-                                      "width": 20
+                                      "height": 25,
+                                      "width": 45
                                   }, {
-                                      "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/react.png",
+                                      "src": "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/react.jpg",
                                       "height": 20,
                                       "width": 20
                                   }, {
@@ -67,7 +65,7 @@ class Home extends React.Component {
                               "value": "#CCC"
                           },
                           "size": {
-                              "value": 30,
+                              "value": 40,
                               "random": false,
                               "anim": {
                                   "enable": true,
@@ -79,8 +77,9 @@ class Home extends React.Component {
                       },
                       "retina_detect": false
                   }
-              }
+              } 
               />
+            </div>
               <div>
                 <ul className='cb-slideshow'>
                     <li><span>Image1</span></li>
@@ -91,7 +90,23 @@ class Home extends React.Component {
                     <li><span>Image3</span></li>
             	</ul>
               </div>
-               
+              <div id="landingPage-content" className="landingPage-content content-hide">
+                  <p>I'm Vignesh Murugan,</p><h1>Full Stack Developer</h1>
+                  
+                  <p> 
+                  <Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={1000} href="view" className="button"><a >View My Projects</a></Link>
+                  </p>
+              </div>
+              <Navbar bg="dark" expand="lg"> 
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                      <Nav.Link><Link  activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={1000} href="#home">Home</Link></Nav.Link>
+                      <Nav.Link><Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={1000} href="#project">Projects</Link></Nav.Link>
+                      <Nav.Link><Link activeClass="active" to="footer" spy={true} smooth={true} offset={50} duration={1000} href="#contact">Contact</Link></Nav.Link>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Navbar>
           </div>
           
           );
