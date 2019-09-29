@@ -96,7 +96,7 @@ class Home extends React.Component {
                       },
                       "retina_detect": false
                   }
-              } 
+              }
               />
             </div>
               <div>
