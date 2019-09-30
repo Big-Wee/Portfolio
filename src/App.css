@@ -329,7 +329,9 @@ background-color: #343a40;
     .cb-slideshow {
         display: none;
     }
-
+.slider-wrapper>div {
+    flex-direction: column;
+}
     .landingPage-content {
         position: absolute;
         width: 80vw;

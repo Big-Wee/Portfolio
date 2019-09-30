@@ -12,11 +12,11 @@ class Home extends React.Component {
         };
     }
     componentDidMount = () => {
-        if(window.innerWidth > 1200) {
-            window.addEventListener('scroll', this.handleScroll);
-            var navbar = document.querySelector("#navbar");
-            this.sticky = navbar.offsetTop;
-        }
+        // if(window.innerWidth > 1200) {
+        //     window.addEventListener('scroll', this.handleScroll);
+        //     var navbar = document.querySelector("#navbar");
+        //     this.sticky = navbar.offsetTop;
+        // }
     }
     handleScroll = (event) => {
         if (window.pageYOffset >= this.sticky) {
