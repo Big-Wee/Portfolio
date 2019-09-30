@@ -310,17 +310,18 @@ background-color: #343a40;
         width: 600px;
         right: 22em;
     }
+    .cb-slideshow li span {
+        width: 800px;
+        height: 600px;
+        left: 10em;
+    }
 }
 @media only screen and (max-width:2000px) {
 .landingPage-content {
     width: 600px;
     right: 10em;
 }
-.cb-slideshow li span {
-    width: 800px;
-    height: 600px;
-    left: 10em;
-}
+
 }
 
 @media only screen and (max-width:1024px) {
