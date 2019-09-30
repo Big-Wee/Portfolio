@@ -171,7 +171,7 @@ opacity: 0.25;
 }
 .project {
     position: relative;
-    width: 90%;
+    width: 1200px;
     overflow: hidden;
     margin: 8em auto;
     height: auto;
@@ -306,6 +306,18 @@ background-color: #343a40;
 }
 
 
+@media only screen and (min-width:2000px) {
+.landingPage-content {
+    width: 600px;
+    right: 10em;
+}
+.cb-slideshow li span {
+    width: 800px;
+    height: 600px;
+    left: 10em;
+}
+}
+
 @media only screen and (max-width:1024px) {
 .landingPage-content {
     position: absolute;
@@ -314,7 +326,15 @@ background-color: #343a40;
     left: 4em;
     top: 60vh;
 }
-
+.slideImage {
+    width: 600px;
+    height: 200px;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+.project {
+ width: 800px;
+}
 .cb-slideshow,
 .cb-slideshow:after {
     width: 100%;
@@ -334,6 +354,9 @@ background-color: #343a40;
 @media only screen and (max-width:768px) {
     .cb-slideshow {
         display: none;
+    }
+    .project {
+        width: 600px;
     }
 .slider-wrapper>div {
     flex-direction: column;
@@ -372,7 +395,17 @@ background-color: #343a40;
     .slideImage{
     display: none;
     }
+    .project {
+        width: 360px;
+    }
     .backArrow, .nextArrow{
         top: 1em;
     }
+}
+@media only screen and (max-width:320px) {
+
+    .project {
+        width: 300px;
+    }
+
 }
