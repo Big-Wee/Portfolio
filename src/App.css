@@ -51,7 +51,7 @@ opacity: 0.25;
     width: 80%;
     height: 60vh;
     position: absolute;
-    left: 0px;
+    left: 2em;
     color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
@@ -218,6 +218,7 @@ width: 400%;
     right: -50px;
     z-index: 999;
     color: #fff;
+    cursor: pointer;
 }
 
 .backArrow {
@@ -226,6 +227,7 @@ width: 400%;
     left: -50px;
     z-index: 999;
     color: black;
+    cursor: pointer;
 }
 
 .fa-arrow-right:before,
@@ -319,7 +321,8 @@ background-color: #343a40;
     top: 0;
 }
 .cb-slideshow li span {
-    height: 80vh;
+    width: 800px;
+    height: 600px;
 }
 .slide {
     position: relative;
