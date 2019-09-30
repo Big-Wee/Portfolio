@@ -46,8 +46,10 @@ opacity: 0.25;
 }
 
 .cb-slideshow li span {
-    width: 100%;
-    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 60vh;
     position: absolute;
     left: 0px;
     color: transparent;
@@ -338,7 +340,7 @@ background-color: #343a40;
     height: 400px;
    margin:0;
 }
-    .landingPage-content {
+    .landingPage-content { 
         position: absolute;
         width: 80vw;
         color: black;
