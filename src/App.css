@@ -194,7 +194,8 @@ width: 400%;
 .slideImage{
     width: 500px;
     height: 300px;
-    margin-right:2em;
+        margin-right: 2%;
+        margin-left: 5%;
 }
 
 .arrow {
@@ -331,6 +332,11 @@ background-color: #343a40;
     }
 .slider-wrapper>div {
     flex-direction: column;
+}
+.slideImage {
+    width: 100%;
+    height: 400px;
+   margin:0;
 }
     .landingPage-content {
         position: absolute;
