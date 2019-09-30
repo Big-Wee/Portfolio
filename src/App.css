@@ -170,35 +170,33 @@ opacity: 0.25;
 .project {
     position: relative;
     width: 90%;
+    overflow: hidden;
     margin: 8em auto;
     height: auto;
-    overflow: hidden;
-    white-space: nowrap;
 }
 .project h2{
     text-align: center;
 }
-.slideImage {
-        width: 600px;
-        margin-left: 5%;
-        height: 350px;
-}
 .slider-wrapper {
+display: flex;
+flex-wrap: nowrap;
+width: 400%;
+}
+.slider-wrapper > div{
+    width: 100%;
+    display: inline-flex;
+}
+.slide {
     position: relative;
     height: 100%;
     width: 100%;
+}
+.slideImage{
+    width: 500px;
+    height: 300px;
+    margin-right:2em;
 }
 
-.slide {
-    display: inline-flex;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-.slidetext {
-    height: 100%;
-    margin-left: 2em;
-}
 .arrow {
     height: 50px;
     width: 50px;
@@ -213,7 +211,7 @@ opacity: 0.25;
 
 .nextArrow {
     position: absolute;
-    top: 50%;
+    top: 0;
     right: -50px;
     z-index: 999;
     color: #fff;
@@ -221,7 +219,7 @@ opacity: 0.25;
 
 .backArrow {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: -50px;
     z-index: 999;
     color: black;
@@ -320,6 +318,12 @@ background-color: #343a40;
 .cb-slideshow li span {
     height: 80vh;
 }
+.slide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 }
 @media only screen and (max-width:768px) {
     .cb-slideshow {
@@ -352,7 +356,9 @@ background-color: #343a40;
 
 }
 @media only screen and (max-width:420px) {
-    
+    .slideImage{
+    display: none;
+    }
     .backArrow, .nextArrow{
         top: 1em;
     }

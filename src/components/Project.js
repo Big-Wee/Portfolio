@@ -13,7 +13,7 @@ class Project extends React.Component{
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/Hauora.jpg",
                 text: <div>
                         <h3>Hauora Yoga Conference</h3>
-                        <p>Custom plugin developement using PHP OOP(Wordpress), Website design,<br/> and Stripe Gateway.</p>
+                        <p>Custom plugin developement using PHP OOP(Wordpress), Website design, and Stripe Gateway.</p>
                         <a target="_blank" href="https://hauorayoga.org.nz" id="launch" class="button">Launch Website</a>
                       </div>
                 },
