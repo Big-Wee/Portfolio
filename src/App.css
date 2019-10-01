@@ -323,7 +323,12 @@ background-color: #343a40;
 }
 
 }
+@media only screen and (max-width:1200px) {
+    .landingPage-content {
+        right: 2em;
+    }
 
+}
 @media only screen and (max-width:1024px) {
 .landingPage-content {
     position: absolute;
