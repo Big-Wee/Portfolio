@@ -26,6 +26,14 @@ class Project extends React.Component{
                       </div>
                 },
                 {
+                    image: "https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/master.jpg",
+                    text: <div>
+                        <h3>Master Outdoor Cleaning</h3>
+                        <p>Custom Wordpress child theme, Bulma and hosted in Bluehost.</p>
+                        <a target="_blank" href="http://mastercleaningoutdoor.co.nz" id="launch" class="button">Launch Website</a>
+                    </div>
+                },
+                {
                 image:"https://www.hauorayoga.org.nz/wp-content/uploads/2019/09/Fitnz.jpg",
                 text: <div>
                         <h3>FitNz Jobsite</h3>

@@ -182,7 +182,7 @@ opacity: 0.25;
 .slider-wrapper {
 display: flex;
 flex-wrap: nowrap;
-width: 400%;
+width: 500%;
 }
 .slider-wrapper > div{
     width: 100%;
